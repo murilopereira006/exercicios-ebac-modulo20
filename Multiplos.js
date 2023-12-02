@@ -11,3 +11,5 @@ const multiplos = (numeroLimite) => {
 
     return arrayDeMultiplosDe3ou5.reduce((accumulator, value) => accumulator + value, 0);
 };
+
+module.exports = { multiplos };
