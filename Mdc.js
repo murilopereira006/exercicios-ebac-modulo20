@@ -1,4 +1,5 @@
 const mdc = (a, b) => {
+    if (a == null || b == null) return 'Error'
     if (a < b) [a, b] = [b, a];
 
     if (a !== 0 && b !== 0) {
@@ -11,3 +12,5 @@ const mdc = (a, b) => {
         return a;
     } else return 0;
 };
+
+module.exports = { mdc };
