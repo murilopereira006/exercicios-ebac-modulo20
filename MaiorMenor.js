@@ -9,11 +9,11 @@ const maiorEMenor = (array) => {
         if (array[maiorIndice] < array[i]) {
             maiorIndice = i
         }
-        console.log('VALOR dE i -> ', array[i])
-        console.log('VALOR dE MERNOR -> ', array[menorIndice])
-        console.log('VALOR dE MAIOR -> ', array[maiorIndice])
     }
+
+    if (menorIndice == 0 && maiorIndice == 0) return 'array vazio ou com valor unico'
 
     return `O índice do menor número é ${menorIndice} e o índice do maior número é ${maiorIndice}`;
 };
 
+module.exports = { maiorEMenor };
